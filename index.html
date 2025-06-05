@@ -1,5 +1,4 @@
-from flask import Flask, render_template_string
-app = Flask(__name__)
+
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
@@ -47,10 +46,3 @@ app = Flask(__name__)
     </div>
 </body>
 </html>
-"""
-@app.route('/')
-def home():
-    return render_template_string(html_content)
-
-if __name__ == '__main__':
-    app.run(debug=True)
