@@ -1,1 +1,3 @@
-
+render_template('index.html', 
+               page_title="Tiêu đề",
+               welcome_message="Lời chào")
