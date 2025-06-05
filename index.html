@@ -1,10 +1,5 @@
 from flask import Flask, render_template_string
-
 app = Flask(__name__)
-
-# HTML và CSS cho trang web
-html_content = """
-<!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
@@ -53,7 +48,6 @@ html_content = """
 </body>
 </html>
 """
-
 @app.route('/')
 def home():
     return render_template_string(html_content)
